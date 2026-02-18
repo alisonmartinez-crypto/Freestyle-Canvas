@@ -67,7 +67,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 context.clearRect(0, 0, canvas.width, canvas.height);
 
-
+/*
   // --- parameters ---
   const cx = canvas.width / 2;
   const cy = canvas.height / 2;
@@ -93,9 +93,63 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.moveTo(cx, cy - scale / 4.2);
   context.lineTo(cx, cy + scale / 1);
   context.stroke();
-    </script>
+  
+  //draw a new letter U on top of the UT symbol
+   context.strokeStyle = "#75d877"; // light green
+  context.lineWidth = 5;
+  context.beginPath();
+  context.moveTo(cx - scale / 2, cy - scale / 1.4);
+  context.lineTo(cx - scale / 2, cy + scale / 2);
+  context.lineTo(cx + scale / 2, cy + scale / 2);
+  context.lineTo(cx + scale / 2, cy - scale / 1.4);
+  context.stroke();
+
+
+   context.strokeStyle = "#45a347"; // light green
+  context.lineWidth = 5;
+  // --- draw the T nested inside ---
+  context.beginPath();
+  // top bar of T
+  context.moveTo(cx - scale / 1.2, cy - scale / 4.2);
+  context.lineTo(cx + scale / 1.2, cy - scale / 4.2);
+  // vertical stem of T
+  context.moveTo(cx, cy - scale / 4.2);
+  context.lineTo(cx, cy + scale / 1);
+  context.stroke();
+
+/*
+  /*context.lineWidth = 15
+  context.strokeStyle = "#97cae7" //light blue
+  context.strokeRect(50, 100, 30, 60);// makes a rectangle that does not have a center.
+
+  context.fillStyle = "pink"
+  context.fillRect(65, 130, 250, 75) //makes a full rectangle that is pink
+  */
+  //drawing a half circle
+  context.strokeStyle = "#fa63ab";
+  context.lineWidth = "5";
+  context.fillStyle = "#fcfc6f";
+  context.beginPath();
+  context.arc(180, 225, 50, 18/12*Math.PI, 6/12*Math.PI);
+  context.closePath();
+  context.fill();
+  context.stroke();
+
+  //drawing a quarter pizza slice
+  context.strokeStyle = "#fa63ab";
+  context.lineWidth = "5";
+  context.fillStyle = "#fcfc6f";
+  context.beginPath();
+  context.moveTo(180,375);
+  context.arc(180, 375, 50, 18/12*Math.PI, 2*Math.PI);
+  context.closePath();
+  context.fill();
+  context.stroke();
+
+      </script>
 		
-	</p>
+        
+    </p>
 </div>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
