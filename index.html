@@ -125,6 +125,8 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.fillStyle = "pink"
   context.fillRect(65, 130, 250, 75) //makes a full rectangle that is pink
   */
+  
+/*
   //drawing a half circle
   context.strokeStyle = "#fa63ab";
   context.lineWidth = "5";
@@ -145,6 +147,142 @@ context.clearRect(0, 0, canvas.width, canvas.height);
   context.closePath();
   context.fill();
   context.stroke();
+*/
+
+/* 
+
+//drawing a right triangle
+  context.strokeStyle = "green" //color of the outline 
+  context.lineWidth = "7" //thickness of the outline
+  context.fillStyle = "lightblue" //color of the interior
+  context.beginPath(); //start the line drawing
+  context.moveTo(50, 50); //the first point
+  context.lineTo(50, 200); //draws the line from the first point to the second point
+  context.lineTo(150, 200); //draws the line fomr the second point to the third point
+  context.closePath(); //draws the line from the last point to the first point
+  context.fill(); //does the "filling in"
+  context.stroke(); //draws the outline
+*/
+
+
+/*
+  //drawing a tilted ellipse
+  context.strokeStyle = "#f33232"; //color of the outline
+  context.lineWidth = 2; //thickness of the outline
+  context.fillStyle = "#ecab21"; //color of the interior
+  context.beginPath();
+  context.ellipse(150, 100, 80, 40, 22/12*Math.PI, 0, 2*Math.PI);
+  context.fill();
+  context.stroke();
+
+  */
+
+  /*
+ // made by AI not made by a human 
+  // --- draw a circle ---
+  context.strokeStyle = "#3498db"; // blue
+  context.fillStyle = "#2ecc71"; // green
+  context.lineWidth = 3;
+  context.beginPath();
+  context.arc(180, 225, 60, 0, 2 * Math.PI); // center at (180, 225), radius 60
+  context.fill();
+  context.stroke();
+  */
+
+
+  /*
+  //made by ai not made by a human
+  // ===== Bob Ross Landscape =====
+  
+  // Sky background
+  context.fillStyle = "#87CEEB"; // Sky blue
+  context.fillRect(0, 0, canvas.width, canvas.height / 2);
+  
+  // Ground
+  context.fillStyle = "#2d5016"; // Dark forest green
+  context.fillRect(0, canvas.height / 2, canvas.width, canvas.height / 2);
+  
+  // Happy little clouds
+  function drawCloud(x, y, size) {
+    context.fillStyle = "rgba(255, 255, 255, 0.9)";
+    context.beginPath();
+    context.arc(x, y, size, 0, Math.PI * 2);
+    context.arc(x + size * 0.6, y - size * 0.3, size * 0.9, 0, Math.PI * 2);
+    context.arc(x + size * 1.2, y, size, 0, Math.PI * 2);
+    context.fill();
+  }
+  
+  drawCloud(60, 60, 25);
+  drawCloud(280, 80, 30);
+  drawCloud(150, 40, 28);
+  
+  // Mountains - back
+  context.fillStyle = "#404040"; // Dark gray
+  context.beginPath();
+  context.moveTo(-20, canvas.height / 2);
+  context.lineTo(80, 100);
+  context.lineTo(180, canvas.height / 2);
+  context.closePath();
+  context.fill();
+  
+  context.beginPath();
+  context.moveTo(160, canvas.height / 2);
+  context.lineTo(260, 80);
+  context.lineTo(360, canvas.height / 2);
+  context.closePath();
+  context.fill();
+  
+  // Mountain highlights
+  context.fillStyle = "#606060";
+  context.beginPath();
+  context.moveTo(80, 100);
+  context.lineTo(130, 150);
+  context.lineTo(110, 200);
+  context.closePath();
+  context.fill();
+  
+  // Lake
+  context.fillStyle = "#1a4d7a";
+  context.fillRect(0, 320, canvas.width, 130);
+  
+  // Lake reflection
+  context.fillStyle = "rgba(135, 206, 235, 0.2)";
+  context.fillRect(0, 320, canvas.width, 70);
+  
+  // Happy little trees - back row
+  function drawTree(x, y, height, trunkWidth) {
+    // Trunk
+    context.fillStyle = "#4a2c1a";
+    context.fillRect(x - trunkWidth / 2, y, trunkWidth, height / 3);
+    
+    // Foliage
+    context.fillStyle = "#2d5016";
+    context.beginPath();
+    context.arc(x, y - height / 4, height / 2, 0, Math.PI * 2);
+    context.fill();
+    
+    context.fillStyle = "#3d7a1f";
+    context.beginPath();
+    context.arc(x - height / 6, y + height / 8, height / 2.5, 0, Math.PI * 2);
+    context.fill();
+    
+    context.beginPath();
+    context.arc(x + height / 6, y + height / 8, height / 2.5, 0, Math.PI * 2);
+    context.fill();
+  }
+  
+  // Plant trees
+  drawTree(50, 250, 80, 8);
+  drawTree(310, 260, 75, 8);
+  drawTree(150, 280, 60, 6);
+  drawTree(280, 290, 55, 6);
+  
+  // Foreground trees
+  drawTree(30, 310, 100, 12);
+  drawTree(330, 300, 95, 11);
+  */
+
+  
 
       </script>
 		
